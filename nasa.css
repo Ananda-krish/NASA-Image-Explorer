@@ -1,0 +1,116 @@
+  body {
+    font-family: Arial, sans-serif;
+    background: url(picz/nasa.jpg);
+    background-color: #6493a8;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    background: url(picz/images.jpg);
+   backdrop-filter: blur(40px);
+border: 20px solid rgba(86, 163, 194, 0.616);
+    
+}
+
+h1 {
+    margin: 0;
+    color: #1a73e8;
+}
+.lane{
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: flex-start;
+    border: solid;
+    border-radius: 6px;
+}
+#filters, #search {
+    margin: 10px 0;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#searchButton, #showMoreButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1a73e8;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#error-message {
+    margin-top: 10px;
+}
+
+#image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 200px;
+    cursor: pointer;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1000;
+    /* flex-direction: column; */
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    overflow: auto;
+    margin: auto; /* Center the modal content */
+    max-width: 80%; /* Limit maximum width of modal content */
+    max-height: 80%; 
+    
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 70%;
+}
+
+.close-button {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+} 

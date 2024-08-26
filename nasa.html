@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Image Explorer</title>
+    <link rel="stylesheet" href="nasa.css">
+</head>
+<body>
+    <header>
+        <img src="picz/logo.png" alt="logo" class="lane" >
+        <h1>NASA Image Explorer</h1>
+        <div id="filters">
+            <label for="category">Filter by Category: </label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="stars">Stars</option>
+                <option value="galaxies">Galaxies</option>
+                <option value="planets">Planets</option>
+                
+            </select>
+        </div>
+        <div id="search">
+            <label for="searchInput">Search by Image Title: </label>
+            <input type="text" id="searchInput" placeholder="Enter image title...">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="error-message" style="display:none; color: red;">No images found for the given search term.</div>
+    </header>
+    <main id="image-gallery"></main>
+    <button id="showMoreButton" style="display:none;">Show More</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="nasa.js"></script>
+</body>
+</html>
